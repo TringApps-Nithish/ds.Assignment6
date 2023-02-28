@@ -20,14 +20,14 @@ public class F_WordFrequency {
                         else
                             map.put(words[i],1);
                     }
-
-    Stream<Entry<String, Integer>> sorted=  map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()));
-        sorted.forEach(System.out::println);
                 }
+                Stream<Entry<String, Integer>> sorted=  map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()));
+                sorted.forEach(System.out::println);
             } 
             catch (Exception e) 
             {
             System.out.println(e);
-            }    
+            }
+    
     }
 }
